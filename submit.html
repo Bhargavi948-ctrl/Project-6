@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <style>
+        .success-image {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">Submit</button>
+</form>
+
+<img id="successImage" class="success-image" src="success.png" alt="Submission Successful">
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Perform your form submission logic here (e.g., AJAX request)
+    // For this example, we'll just display the success image
+
+    var successImage = document.getElementById('successImage');
+    successImage.style.display = 'block';
+
+    // Optionally, you can hide the image after a few seconds
+    setTimeout(function() {
+        successImage.style.display = 'none';
+    }, 3000); // Adjust the timeout duration as needed
+});
+</script>
+
+</body>
+</html>

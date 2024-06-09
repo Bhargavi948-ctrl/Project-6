@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care Services</title>
+    <style>
+    /* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background: transparent;
+}
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.video-background .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+main {
+    padding: 20px;
+    background: transparent;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1 1 calc(33.333% - 40px);
+            box-sizing: border-box;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)).224,60px;
+    gap: 20px;
+    padding: 20px;
+    background: transparent;
+}
+
+.service-item {
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item h2 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.main img{
+    max-width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+}
+.button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+</style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+ </video>
+    <header>
+        <h1>Pet Care Services</h1>
+    </header>
+     <div class="overlay"></div>
+    </div>
+    <a href="mainpage.html" class="button-link">Home</a>
+    <main>
+        <section class="services-grid">
+            <div class="service-item">
+                <img src="petgrom.jpg" alt="Team Member 1">
+                <h2>Pet Grooming</h2>
+                <p>Professional grooming services for your pets.</p>
+            </div>
+            <div class="service-item">
+                <img src="health.pg.webp" alt="Team Member 1">
+                <h2>Health care</h2>
+                <p>Reliable and caring pet sitting services.</p>
+            </div>
+            <div class="service-item">
+                <img src="training.jpg" alt="Team Member 1">
+                <h2>Pet Training</h2>
+                <p>Expert training to help your pets learn and grow.</p>
+            </div>
+            <div class="service-item">
+                <img src="veternery.jpg" alt="Team Member 1">
+                <h2>Veterinary Services</h2>
+                <p>Comprehensive veterinary care for all your pet's needs.</p>
+            </div>
+            <div class="service-item">
+                <img src="activity.jpg" alt="Team Member 1">
+                <h2>Activity exercise</h2>
+                <p>Activities associated with dog ownership, like feeding, grooming, playing and letting them outside, all increase physical activity levels.</p>
+            </div>
+            <!-- Add more services as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pet Care. All rights reserved.</p>
+    </footer>
+</body>
+</html>

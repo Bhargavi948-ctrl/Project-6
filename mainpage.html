@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>Pet Care Website</title>
+    </head>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container-fluid{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to left,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(mainpage.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        } 
+        .container{
+            width: 1200px;
+            height: 80px; 
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px,25px;
+        }
+        .container h2{
+            font-family:arial;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+.container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .container ul li{
+    font-family: arial;
+    color:#fff;
+    list-style: none;
+    margin-right: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+  } 
+  .container ul li:first-child 
+  {
+    color: lime;
+  }
+  .container ul li:hover
+   {
+    color: lime;
+  }
+  .container .btn
+  {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    color:lime;
+    transition: 0.5s;
+  }
+  .container .btn:hover
+  {
+    background-color: lime;
+    color: #fff;
+  }
+  .cotent
+  {
+    width: 100px;
+    height: 100vh;
+
+    margin: auto;
+  }
+  .content h1
+  {
+    font-family: arial;
+    font-weight: bold;
+    color:lightblue;
+    font-size: 50px;
+    padding-top: 100px;
+  }
+  .content p{
+    font-family: arial;
+    font-weight: bold;
+    color:lightgrey;
+    line-height: 30px;
+    padding-top: 30px;
+  }
+  img{
+    width:100px;
+    height:100px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+  .icons a,
+  .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color:lightyellow;
+    cursor: pointer;
+  }
+    </style>
+    <body>
+        <div class="container-fluid">
+            <div class="container">
+              <div class="image">
+                <img src="logo.jpg">
+              </div>
+              <h2>Pet Care</h2>
+              <ul>
+                <a href="mainpage.html"><li>HOME</li></a>
+               <a href="about.html"><li>ABOUT</li></a>
+                <a href="servicess.html"><li>SERVICES</li></a>
+                <a href="shop.html"><li>SHOP</li></a>
+                <a href="contact.html"><li>CONTACT</li></a>
+              </ul>
+              <div class="icons">
+              <a href="signuppage.html"><ion-icon name="person-outline"></ion-icon></a>
+              </div>
+            <button class="btn"><ion-icon name="call-outline"></ion-icon>(323)446-663</button>
+            </div>
+            <div class="content">
+            <h1>Gromming & Pet<br>Care Center</h1>
+            <p>Professional pet care services not only provide care but also educate pet owners on how to better understand and meet their pets' needs</p>
+            </div>
+            
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
